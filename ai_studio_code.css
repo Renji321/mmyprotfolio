@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    background: rgba(15, 15, 15, 0.9);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff3e3e;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ff3e3e;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e63535;
+}
+
+.portfolio {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    padding: 100px 20px;
+    text-align: center;
+    background: #0a0a0a;
+}
+
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    color: #ff3e3e;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    nav { padding: 10px; }
+    .grid { grid-template-columns: 1fr; }
+}
